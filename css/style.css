@@ -1,0 +1,105 @@
+/*
+- color ECO-FRIENDLY: #3d7ffa
+- color description: #3a80f9
+- link-button gradient: #52d2ff -> #4db5fe
+- menu: #756f7b
+*/
+
+html,body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body > div{
+    background-image: url(../bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 55% 5% 5%;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*-------Menu------*/
+menu{
+    color:#756f7b;
+    display:flex;
+    flex-direction: row;
+    padding:0px;
+    font-family: 'Oswald', sans-serif;
+}
+menu div{
+    font-size:18px;
+    padding-right:25px;
+    margin-right:20px;
+    font-weight: 300;
+}
+.sign-up{
+    padding: 2px 30px;
+    border: 1px solid #756f7b;
+    border-radius:20px;
+    text-decoration-line:1px;
+    text-align: center;
+    
+}
+/*-------Header------*/
+header{
+    color:#3d7ffa;
+    /* nu cred ca ai nevoie de pozitionare, este ordinea normala a layoutului, maxim te poti folosi de tehnici de spatiere: margin, padding */
+    position:absolute;
+    top: 20%;
+}
+h1,h2{
+    color:#3d7ffa;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+    font-size:72px;
+    margin-bottom:0px;
+}
+h2{
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: 15px;
+    margin-top:7px;
+    margin-bottom: 20px;
+}
+hr{
+    border-top: 0.5px solid #3d7ffa;
+    margin:0px;
+    width: 75%;
+}
+/*-------Section------*/
+.description{
+    color:#3a80f9;
+    /* un layout de acest timp nu isi are sensul ori practicitatea ori dinamicitatea sa fie implementat cu position: absolute */
+    position: absolute;
+    bottom: 30%;
+    width:30% ;
+    text-align: justify;
+    font-size: 18px;
+}
+.description, .button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+/*-------Button------*/
+.button a{
+    position: absolute;
+    bottom: 15%;
+
+    background-image: linear-gradient(to right,#52d2ff,#4db5fe);
+
+    text-align:center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius:12px;
+    color: rgb(237, 249, 255);
+    padding: 12px 30px;
+}
+.button a:hover{
+    background-image: linear-gradient(to right,#40b3dd,#49acf3);
+}
