@@ -30,6 +30,7 @@ menu{
     flex-direction: row;
     padding:0px;
     font-family: 'Oswald', sans-serif;
+    margin-bottom:40px;
 }
 menu div{
     font-size:18px;
@@ -46,11 +47,9 @@ menu div{
     
 }
 /*-------Header------*/
-header{
+.titles-wrapper{
     color:#3d7ffa;
-    /* nu cred ca ai nevoie de pozitionare, este ordinea normala a layoutului, maxim te poti folosi de tehnici de spatiere: margin, padding */
-    position:absolute;
-    top: 20%;
+    margin-top:60px;
 }
 h1,h2{
     color:#3d7ffa;
@@ -70,15 +69,13 @@ h2{
 hr{
     border-top: 0.5px solid #3d7ffa;
     margin:0px;
-    width: 75%;
+    width: 60%;
 }
 /*-------Section------*/
 .description{
     color:#3a80f9;
-    /* un layout de acest timp nu isi are sensul ori practicitatea ori dinamicitatea sa fie implementat cu position: absolute */
-    position: absolute;
-    bottom: 30%;
-    width:30% ;
+    width:75% ;
+    margin-top:45px;
     text-align: justify;
     font-size: 18px;
 }
@@ -87,9 +84,10 @@ hr{
     font-weight: 300;
 }
 /*-------Button------*/
+.button{
+    margin-top:10%;
+}
 .button a{
-    position: absolute;
-    bottom: 15%;
 
     background-image: linear-gradient(to right,#52d2ff,#4db5fe);
 
